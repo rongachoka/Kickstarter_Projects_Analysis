@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kickstarter-venv"
+version = "0.1.0"
+description = ""
+authors = ["rongachoka <rongachoka.rw@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kickstarter_venv"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.25.0"
+pandas = "^2.0.3"
+seaborn = "^0.12.2"
+scipy = { version = "^1.11.1", python = ">=3.9,<3.13" }
+missingno = "^0.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
